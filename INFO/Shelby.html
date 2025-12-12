@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1967 Shelby GT500</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: LEFT IMAGE + RIGHT TEXT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS on the RIGHT SIDE (Grid Layout) === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  /* Hover Specs */
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  /* === GALLERY === */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>1967 Shelby GT500</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/1967 mustang.png">
+
+    <div class="top-text">
+      <p>
+        The 1967 Shelby GT500 is one of the most legendary American muscle cars ever built. 
+        Developed by Carroll Shelby, it represented the high-performance evolution of the Ford Mustang,
+        blending aggressive styling, racing heritage, and big-block power.
+      </p>
+
+      <p>
+        Under the hood sits the powerful 428 cubic-inch “Police Interceptor” V8 equipped with dual 
+        Holley four-barrel carburetors. This setup delivered massive torque and exhilarating straight-line
+        performance, making the GT500 one of the fastest American cars of the 1960s.
+      </p>
+
+      <p>
+        The 1967 model year was the first GT500 ever produced, making it extremely iconic and highly desirable.
+        With fewer than 2,050 units built, it remains one of the rarest and most collectible Shelby Mustangs today.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS RIGHT SIDE === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>428 cu in (7.0 L) V8 "Police Interceptor"</li>
+            <li>Dual Holley 4-barrel carburetors</li>
+            <li>Power: ~355 hp (factory rated)</li>
+            <li>Torque: ~569 Nm</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission</div>
+        <div class="spec-content">
+          <ul>
+            <li>4-speed manual</li>
+            <li>3-speed automatic (optional)</li>
+            <li>Rear-wheel drive</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: ~6.5 seconds</li>
+            <li>Top Speed: ~215 km/h</li>
+            <li>Quarter Mile: ~14.7 seconds</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis</div>
+        <div class="spec-content">
+          <ul>
+            <li>Modified Mustang unibody</li>
+            <li>Front: Independent suspension with coil springs</li>
+            <li>Rear: Leaf springs</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Front: Power-assisted disc brakes</li>
+            <li>Rear: Drum brakes</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: 4,722 mm</li>
+            <li>Width: 1,829 mm</li>
+            <li>Height: 1,346 mm</li>
+            <li>Wheelbase: 2,743 mm</li>
+            <li>Weight: ~1,540 kg</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY SECTION === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/Shelby front view.jpg" alt="Shelby Front View">
+    <img src="../PNG/side-view-1967-Shelby-GT500.jpg" alt="Shelby Side View">
+    <img src="../PNG/1967-shelby-gt500-interior.jpg" alt="Shelby Interior">
+    <img src="../PNG/1967-shelby-gt500-fastback-15.jpg" alt="Shelby Rear View">
+  </div>
+
+</div>
+
+</body>
+</html>

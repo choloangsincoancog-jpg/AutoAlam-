@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamborghini Veneno</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: LEFT IMAGE + RIGHT TEXT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS on the RIGHT SIDE (Grid Layout) === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  /* Hover Specs */
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+  /* === GALLERY === */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Lamborghini Veneno</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/Veneno.png">
+
+    <div class="top-text">
+      <p>
+        The Lamborghini Veneno is a hypercar built to celebrate Lamborghini’s 50th anniversary, introduced in 2013. 
+        Its name, “Veneno,” means “venom” in Spanish, and it perfectly reflects the car’s aggressive design, extreme 
+        aerodynamics, and razor-sharp performance.
+      </p>
+
+      <p>
+        Based on the Aventador platform, the Veneno pushes engineering to the extreme with a naturally aspirated 
+        6.5-liter V12 producing <b>750 PS (740 hp)</b>, a 7-speed ISR single-clutch gearbox, and all-wheel drive.
+        Only <b>3 coupés</b> and <b>9 roadsters</b> were produced, making it one of the rarest Lamborghinis ever.
+      </p>
+
+      <p>
+        With a 0–100 km/h time of 2.8 seconds and a top speed of ~355 km/h, the Veneno remains one of the most extreme, 
+        exclusive, and iconic hypercars ever built.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS RIGHT SIDE === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>6.5 L Naturally Aspirated V12</li>
+            <li>750 PS (740 hp)</li>
+            <li>690 Nm torque</li>
+            <li>Redline: ~8,400 rpm</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission & Drivetrain</div>
+        <div class="spec-content">
+          <ul>
+            <li>7-Speed ISR Single-Clutch Transmission</li>
+            <li>All-Wheel Drive System</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: 2.8 seconds</li>
+            <li>Top Speed: ~355 km/h</li>
+            <li>Quarter Mile: ~9.9 seconds</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbon-fiber monocoque</li>
+            <li>Push-rod suspension system</li>
+            <li>Carbon-ceramic high-performance brakes</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: ~4,965 mm</li>
+            <li>Width: ~2,070 mm</li>
+            <li>Height: ~1,150 mm</li>
+            <li>Wheelbase: ~2,700 mm</li>
+            <li>Weight: ~1,490 kg</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Practicality</div>
+        <div class="spec-content">
+          <ul>
+            <li>2-seat cockpit</li>
+            <li>Race-focused minimalist interior</li>
+            <li>Premium leather & Alcantara</li>
+            <li>Extremely limited cargo space</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY SECTION === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/LV front view.jpg" alt="Veneno Front View">
+    <img src="../PNG/Lamborghini-Veneno-side view.jpg" alt="Veneno Side View">
+    <img src="../PNG/LV interior .jpg" alt="Veneno Interior">
+    <img src="../PNG/LV rear view.jpg" alt="Veneno Rear View">
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamborghini Murciélago</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: LEFT IMAGE + RIGHT TEXT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  /* === GALLERY === */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Lamborghini Murciélago</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/murcielago.png">
+
+    <div class="top-text">
+      <p>
+        The Lamborghini Murciélago is one of the most iconic V12 supercars ever produced. 
+        Introduced in 2001, it marked the beginning of the modern Lamborghini era under Audi ownership. 
+        Designed by Luc Donckerwolke, the Murciélago combined sharp Italian aggression with German engineering precision.
+      </p>
+
+      <p>
+        The Murciélago is powered by a legendary 6.2-liter (later 6.5-liter) naturally aspirated V12 engine, 
+        producing up to 661 hp in the LP 670-4 SV variant. Power is sent through either a gated 6-speed manual 
+        or Lamborghini’s E-Gear automated manual transmission.
+      </p>
+
+      <p>
+        Known for its scissor doors, extreme aerodynamics, and incredible performance, the Murciélago became 
+        a symbol of the ultimate early-2000s supercar—continuing Lamborghini’s legacy of dramatic V12 machines.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS SECTION === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>6.2 L Naturally Aspirated V12 (2001–2006)</li>
+            <li>6.5 L Naturally Aspirated V12 (LP640 & SV)</li>
+            <li>572–661 hp depending on variant</li>
+            <li>Signature Lamborghini V12 sound</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission</div>
+        <div class="spec-content">
+          <ul>
+            <li>6-speed gated manual</li>
+            <li>6-speed E-Gear automated manual</li>
+            <li>All-wheel drive (AWD)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: 3.2–3.8 seconds (varies by model)</li>
+            <li>Top Speed: 330–342 km/h</li>
+            <li>Weight: ~1,650 kg</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="spec-column">
+
+      <!-- CHASSIS -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbon fiber & steel tubular frame</li>
+            <li>All-wheel drive system</li>
+            <li>Electronically controlled aerodynamics</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Brembo ventilated discs</li>
+            <li>Optional carbon-ceramic brakes (LP640+)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: 4,579 mm</li>
+            <li>Width: 2,045 mm</li>
+            <li>Height: 1,135 mm</li>
+            <li>Wheelbase: 2,665 mm</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+ <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/LM front view.jpg" alt="Murcielago Front View">
+    <img src="../PNG/LM side view.jpg" alt="Murcielago Side View">
+    <img src="../PNG/LM interior.jpg" alt="Murcielago Interior View">
+    <img src="../PNG/LM rear view.jpg " alt="Murcielago Rear View">
+  </div>
+
+</div>
+
+</body>
+</html>

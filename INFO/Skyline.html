@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nissan Skyline R34</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: LEFT IMAGE + RIGHT TEXT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 750px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS GRID === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  /* Hoverable spec sections */
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  /* === GALLERY STYLES === */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Nissan Skyline R34</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/Skyline.png">
+
+    <div class="top-text">
+      <p>
+        The Nissan Skyline R34, produced between 1999 and 2002, is one of the most iconic Japanese performance cars of all time. 
+        As part of the legendary Skyline GT-R lineage, the R34 combined cutting-edge technology, advanced aerodynamics, 
+        and the RB26DETT twin-turbo inline-six engine to create a car that was both track-capable and street-legendary. 
+        Its distinctive design, aggressive stance, and advanced features made it a symbol of Japanese automotive engineering excellence.
+      </p>
+      <p>
+        The R34 was equipped with the ATTESA E-TS all-wheel-drive system and an active limited-slip rear differential (Super-HICAS), 
+        giving it exceptional handling and cornering capabilities. It gained massive popularity worldwide due to its appearance in 
+        racing games, movies like the Fast & Furious series, and the car’s tunability for high horsepower builds. Despite being a car 
+        from the late 90s, its digital dashboard, multifunction display, and precise performance controls were ahead of its time.
+      </p>
+      <p>
+        Today, the Skyline R34 is a collector’s dream, revered by enthusiasts for its balance of power, handling, and classic JDM styling. 
+        It remains a benchmark for Japanese performance cars, representing the golden era of Nissan’s Skyline GT-R development.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS GRID === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>RB26DETT 2.6 L Inline-6 Twin-Turbo</li>
+            <li>Power: 280 PS (officially, ~276 hp) at 6,800 rpm</li>
+            <li>Torque: 353 Nm at 4,400 rpm</li>
+            <li>Redline: 8,000 rpm</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION & DRIVETRAIN -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission & Drivetrain</div>
+        <div class="spec-content">
+          <ul>
+            <li>6-Speed Getrag Manual Transmission</li>
+            <li>ATTESA E-TS All-Wheel Drive System</li>
+            <li>Active Limited-Slip Rear Differential (Super-HICAS)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: ~5.4 seconds</li>
+            <li>Top Speed: ~250 km/h (electronically limited)</li>
+            <li>Quarter Mile: ~13.0 seconds</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS & SUSPENSION -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Front: Independent double wishbone</li>
+            <li>Rear: Multi-link independent</li>
+            <li>MacPherson struts for steering precision</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Ventilated disc brakes front and rear</li>
+            <li>ABS with traction control</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: ~4,565 mm</li>
+            <li>Width: ~1,735 mm</li>
+            <li>Height: ~1,335 mm</li>
+            <li>Wheelbase: ~2,640 mm</li>
+            <li>Weight: ~1,540 kg</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR & PRACTICALITY -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Practicality</div>
+        <div class="spec-content">
+          <ul>
+            <li>2+2 seating layout</li>
+            <li>Driver-oriented cockpit with multifunction display</li>
+            <li>Analog and digital combination dashboard</li>
+            <li>Basic cargo space suitable for a performance car</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/2002-Nissan-Skyline-GT-R-R34-123 front.jpg" alt="Skyline R34 Front View">
+    <img src="../PNG/nissan-skyline-r34-gt-r-volk-racing-side.jpg" alt="Skyline R34 Side View">
+    <img src="../PNG/GTR-Interior.jpg" alt="Skyline R34 Interior">
+    <img src="../PNG/Nissan-Skyline-R34-GT-R-15 back.jpg" alt="Skyline R34 Rear View">
+  </div>
+
+</div>
+
+</body>
+</html>

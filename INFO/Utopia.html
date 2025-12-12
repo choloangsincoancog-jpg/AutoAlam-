@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagani Utopia</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: LEFT IMAGE + RIGHT TEXT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS on the RIGHT SIDE (Grid Layout) === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  /* Hover Specs */
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+   /* === GALLERY === */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Pagani Utopia</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/utopia.png">
+
+    <div class="top-text">
+      <p>
+        The Pagani Utopia is the third hypercar from Pagani Automobili, following the legendary Zonda and Huayra.
+        Unveiled in 2022, it represents Horacio Pagani’s vision of purity and simplicity—combining analog emotion
+        with state-of-the-art engineering.
+      </p>
+
+      <p>
+        It is powered by a bespoke Mercedes-AMG 6.0-liter twin-turbo V12 producing 864 hp and 1100 Nm of torque.
+        Buyers can choose between a 7-speed Xtrac manual gearbox or an automated manual, making the Utopia one of
+        the only modern hypercars to offer a true manual option.
+      </p>
+
+      <p>
+        Limited to just 99 units worldwide, the Utopia stands as one of the last pure, unfiltered combustion
+        hypercars — crafted with Pagani’s signature artistry in metal, carbon, and titanium.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS RIGHT SIDE === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>6.0 L Mercedes-AMG M158 Twin-Turbo V12</li>
+            <li>864 hp • 1100 Nm</li>
+            <li>Hand-built for Pagani</li>
+            <li>Meets strict emissions without hybrid assist</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission</div>
+        <div class="spec-content">
+          <ul>
+            <li>7-speed Xtrac manual (optional)</li>
+            <li>7-speed automated manual</li>
+            <li>Rear-wheel drive</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: ~2.9 s (estimated)</li>
+            <li>Top Speed: ~350 km/h</li>
+            <li>Dry Weight: ~1,280 kg</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbo-Titanium monocoque</li>
+            <li>Forged aluminum suspension</li>
+            <li>Active aerodynamics</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Brembo carbon-ceramic discs</li>
+            <li>Advanced heat management</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: 4,838 mm</li>
+            <li>Width: 2,036 mm</li>
+            <li>Height: 1,168 mm</li>
+            <li>Wheelbase: 2,800 mm</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+ <!-- === GALLERY SECTION === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/Pagani-Utopia-2023-front view.jpg" alt="pagani Front View">
+    <img src="../PNG/Pagani-Utopia-2023-sideview.jpg" alt="pagani Side View">
+    <img src="../PNG/Pagani-Utopia-2023-interior.jpg" alt="pagani Interior">
+    <img src="../PNG/Pagani-Utopia-2023-rear view.jpg" alt="pagani Rear View">
+  </div>
+
+</div>
+
+</body>
+</html>

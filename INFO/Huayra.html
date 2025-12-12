@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagani Huayra</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 650px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Pagani Huayra</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/Huayra.png">
+
+    <div class="top-text">
+      <p>
+        The Pagani Huayra, named after the Andean god of winds, is a hypercar that combines Italian 
+        craftsmanship with extreme engineering. First unveiled in 2011, it is known for its breathtaking 
+        attention to detail, active aerodynamics, and a twin-turbo V12 developed exclusively by Mercedes-AMG.
+      </p>
+      <br>
+      <p>
+        The Huayra’s active aero flaps, lightweight carbo-titanium chassis, and advanced hydropneumatic 
+        suspension allow it to carve corners with unmatched precision while maintaining luxurious comfort 
+        inside the cabin.
+      </p>
+      <br>
+      <p>
+        Every Huayra is hand-built, highly customizable, and produced in extremely limited numbers — making 
+        it one of the most exclusive and artistic hypercars ever created.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS GRID === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>6.0 L AMG Twin-Turbocharged V12 (M158)</li>
+            <li>Power: <strong>720–754 hp</strong> (varies by model)</li>
+            <li>Torque: 1,000–1,100 Nm</li>
+            <li>Custom-built exclusively for Pagani</li>
+            <li>Carbo-Titanium monocoque compatibility</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission</div>
+        <div class="spec-content">
+          <ul>
+            <li>7-speed sequential gearbox (Xtrac)</li>
+            <li>Single clutch for lighter weight</li>
+            <li>Rear-wheel drive</li>
+            <li>Electronically controlled differential</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: <strong>3.0 seconds</strong></li>
+            <li>0–200 km/h: <strong>~9.5 seconds</strong></li>
+            <li>Top Speed: <strong>383 km/h</strong> (238 mph)</li>
+            <li>Active aerodynamics with 4 independent flaps</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS / SUSPENSION -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbo-Titanium monocoque chassis</li>
+            <li>Double wishbone suspension</li>
+            <li>Hydropneumatic adaptive dampers</li>
+            <li>Active aero integration for stability</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Brembo carbon-ceramic brakes</li>
+            <li>Lightweight 4-wheel ventilated discs</li>
+            <li>ABS and advanced brake cooling channels</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: 4,605 mm</li>
+            <li>Width: 2,036 mm</li>
+            <li>Height: 1,169 mm</li>
+            <li>Weight: 1,350 kg (depends on variant)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Features</div>
+        <div class="spec-content">
+          <ul>
+            <li>Luxury hand-crafted leather and aluminum</li>
+            <li>Fully exposed gear mechanism</li>
+            <li>Aircraft-inspired switchgear</li>
+            <li>Highly customizable interior trims</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/Huayra front view.jpg" alt="Huayra Front">
+    <img src="../PNG/Huayra side view.png" alt="Huayra Side">
+    <img src="../PNG/Huayra interior.jpg" alt="Huayra Interior">
+    <img src="../PNG/Huayra rear view.jpg" alt="Huayra Rear">
+  </div>
+
+</div>
+
+</body>
+</html>

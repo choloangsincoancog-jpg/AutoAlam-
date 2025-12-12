@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ford Mustang</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: LEFT IMAGE + RIGHT TEXT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS GRID === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  /* Hoverable spec sections */
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+  /* === GALLERY === */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Ford Mustang</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/Mustang.png">
+
+    <div class="top-text">
+      <p>
+        The Ford Mustang is one of the most iconic American muscle cars in automotive history, first introduced in 1964. 
+        As Ford’s flagship sports car, the Mustang redefined performance and style in its era, becoming a symbol of freedom, 
+        power, and rebellion. Over the decades, it has evolved through multiple generations, combining modern engineering 
+        with the classic muscle car spirit that enthusiasts love.
+      </p>
+      <p>
+        The Mustang offers a variety of powertrains, from turbocharged 4-cylinder engines to naturally aspirated V8s, 
+        allowing it to cater to both daily drivers and high-performance enthusiasts. Its aggressive styling, long hood, 
+        and short rear deck give it a distinctive look that has become instantly recognizable worldwide. High-performance 
+        variants such as the Mustang GT, Shelby GT350, and GT500 push the car to supercar levels of acceleration and handling, 
+        while retaining everyday usability and a strong connection to its classic heritage.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS GRID === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE OPTIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Engine Options</div>
+        <div class="spec-content">
+          <ul>
+            <li>2.3 L EcoBoost Inline-4 Turbo: 310–330 hp, 350 Nm torque</li>
+            <li>5.0 L Coyote V8 (GT): 450–480 hp, 570 Nm torque</li>
+            <li>5.2 L V8 (Shelby GT350 / GT500): 526–760 hp, 582–847 Nm torque</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION & DRIVETRAIN -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission & Drivetrain</div>
+        <div class="spec-content">
+          <ul>
+            <li>6-Speed Manual Transmission (GT / Shelby)</li>
+            <li>10-Speed Automatic Transmission (EcoBoost / GT)</li>
+            <li>Rear-Wheel Drive (RWD)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: 3.5–5.5 seconds (varies by engine)</li>
+            <li>Top Speed: 240–320 km/h depending on variant</li>
+            <li>Quarter Mile: ~11–12 seconds (GT / Shelby)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS & SUSPENSION -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Independent rear suspension (all modern models)</li>
+            <li>MacPherson strut front suspension</li>
+            <li>Performance packages with MagneRide adaptive dampers (GT / Shelby)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Disc brakes all around</li>
+            <li>Optional Brembo brakes (GT / Shelby)</li>
+            <li>ABS and stability control systems</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: ~4,788 mm</li>
+            <li>Width: ~1,916 mm</li>
+            <li>Height: ~1,382 mm</li>
+            <li>Wheelbase: ~2,720 mm</li>
+            <li>Weight: 1,600–1,900 kg depending on variant</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR & PRACTICALITY -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Practicality</div>
+        <div class="spec-content">
+          <ul>
+            <li>2+2 seating layout</li>
+            <li>Digital instrument cluster and infotainment system</li>
+            <li>Premium leather and optional Recaro sport seats</li>
+            <li>Front and rear cargo space suitable for daily use</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/ford mustang front view.jpg" alt="Mustang Front View">
+    <img src="../PNG/2022-ford-mustang-gt-side view.jpg" alt="Mustang Side View">
+    <img src="../PNG/2022_ford_mustang_interior.jpg" alt="Mustang Interior">
+    <img src="../PNG/ford mustang rear view.jpg" alt="Mustang Rear View">
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>

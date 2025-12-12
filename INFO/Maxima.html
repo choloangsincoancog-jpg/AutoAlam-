@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nissan Maxima</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: IMAGE LEFT + TEXT RIGHT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS SECTIONS (Hover expandable) === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  /* GALLERY */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Nissan Maxima</h1>
+
+  <!-- === TOP SECTION === -->
+  <div class="top-section">
+    <img src="../PNG/Maxima.png">
+
+    <div class="top-text">
+      <p>
+        The Nissan Maxima is a full-size sedan known for blending luxury, performance, and advanced technology. 
+        Often called the “four-door sports car,” the Maxima combines sleek styling, a powerful V6 engine, and a 
+        comfortable interior, making it a popular choice for drivers who want performance without sacrificing practicality. 
+        Since its introduction in 1981, the Maxima has evolved into a technologically advanced and stylish vehicle.
+      </p>
+      <p>
+        The latest Maxima comes with a 3.5 L V6 engine producing strong horsepower and torque, paired with a continuously 
+        variable transmission (CVT) for smooth acceleration and fuel efficiency. It offers a suite of advanced driver-assist 
+        features, such as ProPILOT Assist, adaptive cruise control, and blind-spot monitoring. With spacious seating and 
+        premium interior materials, the Maxima rivals luxury sedans while remaining more affordable.
+      </p>
+      <p>
+        Today, the Nissan Maxima continues to deliver a balance of performance, comfort, and technology, 
+        making it a competitive choice in the full-size sedan segment. Its combination of sporty handling, luxury features, 
+        and everyday usability ensures that it remains a relevant and appealing option for drivers.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS SECTION (Murciélago style) === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>3.5 L V6 (VQ35DE)</li>
+            <li>Power: 300 hp</li>
+            <li>Torque: 353 Nm</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-section">
+        <div class="spec-title">Transmission & Drivetrain</div>
+        <div class="spec-content">
+          <ul>
+            <li>Xtronic CVT</li>
+            <li>Front-Wheel Drive (FWD)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: ~5.9 seconds</li>
+            <li>Top Speed: ~250 km/h</li>
+            <li>Fuel Economy: ~9–10 L/100 km</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Front: Independent strut suspension</li>
+            <li>Rear: Multi-link independent suspension</li>
+            <li>Sport-tuned suspension (higher trims)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Ventilated disc brakes (front & rear)</li>
+            <li>ABS, EBD, stability control</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: ~4,915 mm</li>
+            <li>Width: ~1,850 mm</li>
+            <li>Height: ~1,440 mm</li>
+            <li>Wheelbase: ~2,775 mm</li>
+            <li>Weight: ~1,660–1,720 kg</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-section">
+        <div class="spec-title">Interior & Practicality</div>
+        <div class="spec-content">
+          <ul>
+            <li>5 seats</li>
+            <li>Premium leather options</li>
+            <li>Touchscreen infotainment</li>
+            <li>Trunk space: ~450 liters</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2 style=>Gallery:</h2>
+  <div class="gallery">
+   <img src="../PNG/Nissan M front view.jpg" alt="Maxima Front View">
+    <img src="../PNG/Nissan M side view.jpg" alt="Maxima Side View">
+    <img src="../PNG/2020_nissan_maxima_dashboard.jpg" alt="Maxima Interior View">
+    <img src="../PNG/Nissan M rear view.jpg " alt="Maxima Rear View">
+  </div>
+
+</div>
+
+</body>
+</html>

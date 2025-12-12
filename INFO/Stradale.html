@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari SF90 Stradale</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 650px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Ferrari SF90 Stradale</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/Stradale.png">
+
+    <div class="top-text">
+      <p>
+        The Ferrari SF90 Stradale is Ferrari’s first-ever **plug-in hybrid** supercar, combining a
+        twin-turbo V8 engine with three electric motors to deliver unprecedented performance.
+      </p>
+      <br>
+      <p>
+        Named after Ferrari’s 90th anniversary, the SF90 represents a new era of electrified performance,
+        offering Formula 1–inspired technology, advanced aerodynamics, and a completely redesigned
+        interior focused on digital driver interfaces.
+      </p>
+      <br>
+      <p>
+        With nearly **1,000 horsepower**, all-wheel drive, and instant hybrid torque, the SF90 Stradale
+        accelerates faster than many hypercars — making it one of Ferrari’s most advanced and powerful
+        road-legal machines ever built.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS GRID === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>4.0 L Twin-Turbocharged V8</li>
+            <li>Three electric motors (one rear, two front)</li>
+            <li>Combined Power: **986 hp (1,000 CV)**</li>
+            <li>Torque: 800 Nm+</li>
+            <li>Hybrid plug-in system with 7.9 kWh battery</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission</div>
+        <div class="spec-content">
+          <ul>
+            <li>8-speed dual-clutch automatic (DCT)</li>
+            <li>All-wheel drive (first Ferrari V8 AWD)</li>
+            <li>Electric-only driving mode (up to 25 km)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: **2.5 seconds**</li>
+            <li>0–200 km/h: **6.7 seconds**</li>
+            <li>Top Speed: **340+ km/h**</li>
+            <li>Lap Time (Fiorano): 1:19.0</li>
+            <li>Active aerodynamics with electronic control</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS / SUSPENSION -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Lightweight aluminum & carbon-fiber hybrid chassis</li>
+            <li>Magnetorheological suspension (SCM-E)</li>
+            <li>High-downforce aerodynamic package</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Brembo carbon-ceramic brakes</li>
+            <li>Electric brake-by-wire system</li>
+            <li>High-performance cooling design</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: 4,710 mm</li>
+            <li>Width: 1,972 mm</li>
+            <li>Height: 1,186 mm</li>
+            <li>Weight: 1,570 kg (dry: 1,570 kg)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Features</div>
+        <div class="spec-content">
+          <ul>
+            <li>16-inch curved digital cockpit display</li>
+            <li>F1-style steering wheel with touch controls</li>
+            <li>Premium carbon fiber & leather interior</li>
+            <li>Hybrid system driving modes (eDrive, Hybrid, Performance, Qualify)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/Stradale front view.jpg" alt="SF90 Front">
+    <img src="../PNG/Stradale side view.jpg" alt="SF90 Side">
+    <img src="../PNG/Stradale interior.jpg" alt="SF90 Interior">
+    <img src="../PNG/Stradale rear view.jpg" alt="SF90 Rear">
+  </div>
+
+</div>
+
+</body>
+</html>

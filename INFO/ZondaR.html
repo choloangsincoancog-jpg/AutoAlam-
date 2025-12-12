@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zonda R</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: LEFT IMAGE + RIGHT TEXT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS on the RIGHT SIDE (Grid Layout) === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  /* Hover Specs */
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  /* === GALLERY === */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Pagani Zonda R</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/zondar.png">
+
+    <div class="top-text">
+      <p>
+        The Pagani Zonda R is a track-only hypercar built with no racing restrictions, allowing Pagani to push engineering to an extreme. Released in 2009, it became known for its ultra-light structure, radical aerodynamics, and razor-sharp driving dynamics.
+      </p>
+
+      <p>
+        Power comes from a naturally aspirated 6.0-liter AMG V12 producing 750 hp, paired with a lightning-fast 6-speed sequential gearbox. The result is a machine designed purely for speed, precision, and raw racing intensity.
+      </p>
+
+      <p>
+        With only 15 units produced, the Zonda R remains one of the rarest and most iconic track weapons ever created.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS RIGHT SIDE === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>6.0 L AMG V12 (NA)</li>
+            <li>750 PS • 710 Nm</li>
+            <li>Dry sump lubrication</li>
+            <li>Derived from CLK-GTR</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission</div>
+        <div class="spec-content">
+          <ul>
+            <li>6-speed sequential</li>
+            <li>Paddle-shift</li>
+            <li>Rear-wheel drive</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: ~2.7 s</li>
+            <li>Top Speed: ~350 km/h</li>
+            <li>Nürburgring: 6:47</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbon-Titanium monocoque</li>
+            <li>Double wishbone suspension</li>
+            <li>Öhlins racing dampers</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Brembo carbon-ceramic</li>
+            <li>Ventilated discs</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Dry Weight: ~1,070 kg</li>
+            <li>Length: 4,886 mm</li>
+            <li>Width: 2,014 mm</li>
+            <li>Height: 1,114 mm</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+<!-- === GALLERY SECTION === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/Pagani-Zonda_R front view.jpg" alt="Zonda Front View">
+    <img src="../PNG/Pagani-Zonda_R side view.jpg" alt="Zonda Side View">
+    <img src="../PNG/Pagani-Zonda_R interior.jpg" alt="Zonda Interior">
+    <img src="../PNG/Pagani-Zonda_R rear view.jpg" alt="Zonda Rear View">
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>

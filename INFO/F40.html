@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nissan Maxima</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: IMAGE LEFT + TEXT RIGHT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS SECTIONS (Hover expandable) === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  /* GALLERY */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Ferrari F40</h1>
+
+  <!-- === TOP SECTION === -->
+  <div class="top-section">
+    <img src="../PNG/F40.png">
+
+    <div class="top-text">
+      <p>
+        The Ferrari F40 is one of the most iconic supercars ever built, created to celebrate Ferrari’s 40th anniversary. 
+        Introduced in 1987, it was the last Ferrari personally approved by Enzo Ferrari himself. 
+        Built with a focus on raw performance, the F40 features a lightweight body made from carbon fiber, Kevlar, 
+        and aluminum, combined with a twin-turbocharged V8 engine that delivers thrilling speed.
+      </p>
+      <p>
+        The F40 was engineered with pure driving in mind—no traction control, no ABS, no power steering, and no luxury features. 
+        Every aspect of the car was designed for performance, from its aerodynamic bodywork to its minimalistic interior. 
+        It quickly became a legend for its brutal acceleration, razor-sharp handling, and signature pop-up headlights.
+      </p>
+      <p>
+        Today, the Ferrari F40 remains one of the most desirable classic supercars, praised for its 
+        motorsport DNA, raw power, and unmatched connection between driver and machine. 
+        It embodies Ferrari’s golden era and continues to stand as a symbol of uncompromised performance.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS SECTION === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>2.9 L Twin-Turbocharged V8</li>
+            <li>Power: 471 hp</li>
+            <li>Torque: 577 Nm</li>
+            <li>Redline: ~7,700 rpm</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-section">
+        <div class="spec-title">Transmission & Drivetrain</div>
+        <div class="spec-content">
+          <ul>
+            <li>5-speed manual transmission</li>
+            <li>Rear-wheel drive (RWD)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: ~4.1 seconds</li>
+            <li>Top Speed: 324 km/h</li>
+            <li>Power-to-weight: ~356 hp/ton</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Lightweight carbon fiber/Kevlar chassis</li>
+            <li>Front: Double wishbone with coil springs</li>
+            <li>Rear: Double wishbone with coil springs</li>
+            <li>Adjustable suspension (later models)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Ventilated disc brakes</li>
+            <li>No ABS</li>
+            <li>Brembo high-performance braking system</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: 4,360 mm</li>
+            <li>Width: 1,970 mm</li>
+            <li>Height: 1,120 mm</li>
+            <li>Wheelbase: 2,450 mm</li>
+            <li>Weight: ~1,100 kg</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="spec-section">
+        <div class="spec-title">Interior & Practicality</div>
+        <div class="spec-content">
+          <ul>
+            <li>2 seats</li>
+            <li>Stripped-down racing interior</li>
+            <li>Carbon-fiber bucket seats</li>
+            <li>No air conditioning (early models), no radio</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/Ferrari-F40-front.jpg" alt="F40 Front View">
+    <img src="../PNG/1991-Ferrari-F40-side-view.jpg" alt="F40 Side View">
+    <img src="../PNG/F40 interior.jpg" alt="F40 Interior">
+    <img src="../PNG/F40 rear view.jpg" alt="F40 Rear View">
+  </div>
+
+</div>
+
+
+</body>
+</html>

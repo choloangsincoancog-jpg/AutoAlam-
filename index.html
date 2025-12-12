@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoAlam : Informational Car Website</title>
+  <link rel="stylesheet" href="Meow.css">
+
+  <style>
+    /* VIDEO SECTION */
+    .video-section {
+      position: relative;
+      width: 100%;
+      height: 80vh; /* height of video section */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .bg-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+      object-fit: cover; /* ensures the video covers section without stretching */
+    }
+
+    .video-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+      z-index: 2;
+    }
+
+    .video-text {
+      position: relative;
+      z-index: 3;
+      color: #fff;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .video-text h2 {
+      font-size: 3vw; /* scales with screen width */
+      margin-bottom: 0.5em;
+    }
+
+    .video-text p {
+      font-size: 1.2vw;
+    }
+
+    /* Make sure text is readable on small screens */
+    @media (max-width: 768px) {
+      .video-text h2 {
+        font-size: 6vw;
+      }
+      .video-text p {
+        font-size: 3.5vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a class="icon" href="Cars.html"><img src="Logo.png" class="logo" alt="Logo"></a>
+    <img src="LogoN.png" class="brand" alt="Brand">
+  </div>
+
+  <!-- VIDEO SECTION -->
+  <section class="video-section">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="nfs-mw-intro.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+    <div class="video-text">
+      <h2>Featured Supercars</h2>
+      <p>Explore rare and iconic hypercars from around the world.</p>
+    </div>
+  </section>
+
+  <!-- CAR GRID -->
+<div class="grid">
+  <div class="card">
+    <div class="container">
+      <a href="CARS/Lambo.html"><img src="Lambo.png" alt="Lamborghini"></a>
+    </div>
+    <div class="text">Lamborghini</div>
+  </div>
+
+  <div class="card">
+    <div class="container">
+      <a href="CARS/Ford.html"><img src="Ford.png" alt="Ford"></a>
+    </div>
+    <div class="text">Ford</div>
+  </div>
+
+  <div class="card">
+    <div class="container">
+      <a href="CARS/Nissan.html"><img src="Nissan.png" alt="Nissan"></a>
+    </div>
+    <div class="text">Nissan</div>
+  </div>
+
+  <div class="card">
+    <div class="container">
+      <a href="CARS/Pagani.html"><img src="Pagani.png" alt="Pagani"></a>
+    </div>
+    <div class="text">Pagani</div>
+  </div>
+
+  <!-- FERRARI FIXED POSITION -->
+  <div class="card">
+    <div class="container">
+      <a href="CARS/Ferrari.html"><img src="Ferrari.png" alt="Ferrari"></a>
+    </div>
+    <div class="text">Ferrari</div>
+  </div>
+</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>AutoAlam © 2025 | Explore • Learn • Drive</p>
+  </footer>
+</body>
+</html>

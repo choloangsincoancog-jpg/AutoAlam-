@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari F80 Concept</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 650px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 230px;           /* same width for all images */
+  height: 150px;          /* same height for all images */
+  object-fit: cover;      /* crops images to fit evenly */
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Ferrari F80 Concept</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/F80.png">
+
+    <div class="top-text">
+      <p>
+        The **Ferrari F80 Concept** is a futuristic hypercar vision created by designer Adriano Raeli. 
+        Although never officially produced by Ferrari, the F80 showcases what a next-generation Ferrari 
+        flagship could look like: extreme aerodynamics, lightweight construction, and hybrid performance 
+        beyond the LaFerrari.
+      </p>
+      <br>
+      <p>
+        The concept proposes a twin-turbo V8 paired with a KERS hybrid system, producing an astonishing 
+        **1,200 horsepower**. Its ultra-aggressive bodywork, Formula 1–inspired aero, and sleek proportions 
+        represent Ferrari’s potential design direction for a future hypercar.
+      </p>
+      <br>
+      <p>
+        With race-derived styling, low-slung stance, and futuristic ducting, the Ferrari F80 stands as one of 
+        the most radical Ferrari concept designs ever imagined.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS GRID === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>3.0 L Twin-Turbo V8 Hybrid (concept)</li>
+            <li>Combined Output: <strong>1,200 hp</strong></li>
+            <li>800 hp from combustion engine</li>
+            <li>400 hp from KERS hybrid system</li>
+            <li>Mid-rear engine layout</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission</div>
+        <div class="spec-content">
+          <ul>
+            <li>7-speed dual-clutch transmission (DCT)</li>
+            <li>Active torque vectoring</li>
+            <li>Rear-wheel drive</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: <strong>2.2 seconds</strong></li>
+            <li>Top Speed: <strong>~500 km/h (theoretical)</strong></li>
+            <li>0–200 km/h: ~5.8 seconds</li>
+            <li>Extreme aerodynamic downforce concept</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS / SUSPENSION -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbon-fiber monocoque chassis</li>
+            <li>Active aerodynamics with sliding aero panels</li>
+            <li>Push-rod suspension concept</li>
+            <li>High-efficiency airflow channeling through body</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbon-ceramic racing brakes</li>
+            <li>Regenerative hybrid braking (concept)</li>
+            <li>Track-oriented cooling system</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: 4,700 mm (approx.)</li>
+            <li>Width: 2,000 mm</li>
+            <li>Height: 1,000 mm</li>
+            <li>Estimated Weight: 800 kg (concept target)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Features</div>
+        <div class="spec-content">
+          <ul>
+            <li>Minimalist F1-style cockpit</li>
+            <li>Fixed carbon bucket seats</li>
+            <li>HUD-style futuristic driver interface</li>
+            <li>Advanced stability and aero management systems</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/F80 front view.png" alt="F80 Front">
+    <img src="../PNG/F80 side view.jpg" alt="F80 Side">
+    <img src="../PNG/F80 interior.jpg" alt="F80 Interior">
+    <img src="../PNG/F80 rear view.jpg" alt="F80 Rear">
+  </div>
+
+</div>
+
+</body>
+</html>

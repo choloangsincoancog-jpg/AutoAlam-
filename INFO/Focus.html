@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ford Focus</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p, ul {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: LEFT IMAGE + RIGHT TEXT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 700px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS in 2 columns === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  /* Gallery */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 290px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+
+  <h1>Ford Focus</h1>
+
+  <!-- TOP SECTION -->
+  <div class="top-section">
+    <img src="../PNG/Focus.png">
+
+    <div class="top-text">
+      <p>
+        The Ford Focus is a compact car that has been a mainstay in Ford’s lineup since 1998, offering a combination 
+        of affordability, performance, and technology. Designed for both urban commuting and enjoyable driving, 
+        the Focus has evolved through multiple generations to include hatchback, sedan, and wagon body styles. 
+        Its reputation for sharp handling, fuel efficiency, and advanced safety features has made it one of the 
+        most popular compact cars worldwide.
+      </p>
+
+      <p>
+        The latest Ford Focus models come with a range of powertrains, including EcoBoost turbocharged engines, 
+        naturally aspirated engines, and hybrid options in some markets. High-performance variants like the 
+        Focus ST and RS feature turbocharged engines, sport-tuned suspension, and advanced braking systems, 
+        giving them near-hot hatch performance while still being practical for daily use.
+      </p>
+    </div>
+  </div>
+
+  <!-- SPECS -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine Options</div>
+        <div class="spec-content">
+          <ul>
+            <li>1.0 L EcoBoost Inline-3: 100–125 hp, 170–200 Nm torque</li>
+            <li>1.5 L EcoBoost Inline-4: 150–182 hp, 240–260 Nm torque</li>
+            <li>2.3 L EcoBoost I4 (ST / RS): 280–350 hp, 440–470 Nm torque</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Transmission -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission & Drivetrain</div>
+        <div class="spec-content">
+          <ul>
+            <li>5/6-Speed Manual Transmission</li>
+            <li>8-Speed Automatic Transmission (optional)</li>
+            <li>Front-Wheel Drive (standard)</li>
+            <li>All-Wheel Drive (optional in RS)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Performance -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: 5.7–10.5 seconds depending on engine</li>
+            <li>Top Speed: 180–250 km/h depending on variant</li>
+            <li>Fuel Economy: 5.0–7.5 L/100 km depending on engine</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- Suspension -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Independent front MacPherson strut suspension</li>
+            <li>Multi-link rear suspension</li>
+            <li>Optional sport-tuned suspension (ST / RS)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Brakes -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Disc brakes front and rear</li>
+            <li>ABS, electronic stability control</li>
+            <li>Upgraded Brembo brakes on ST / RS</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Dimensions -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: ~4,378 mm</li>
+            <li>Width: ~1,825 mm</li>
+            <li>Height: ~1,452 mm</li>
+            <li>Wheelbase: ~2,700 mm</li>
+            <li>Weight: ~1,250–1,500 kg depending on variant</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Interior -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Practicality</div>
+        <div class="spec-content">
+          <ul>
+            <li>5-seat configuration</li>
+            <li>Infotainment system with SYNC 3 or 4</li>
+            <li>Available premium upholstery</li>
+            <li>Hatchback and sedan variants for flexible cargo space (~375–1,354 liters)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- GALLERY -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    
+    <img src="../PNG/2016-ford-focus-se-sedan-front-view.png" alt="Focus View">
+    <img src="../PNG/2017-ford-focus-electric-hatch-side-exterior-view_100600998_m.jpg" alt="Focus Side View">
+    <img src="../PNG/2018_ford_focus_interior.jpg" alt="Focus Interior">
+    <img src="../PNG/ra_266000000_ford-focus-2010-rear-view_4x.png" alt="Focus Rear View">
+  </div>
+  </div>
+
+</div>
+
+</body>
+</html>

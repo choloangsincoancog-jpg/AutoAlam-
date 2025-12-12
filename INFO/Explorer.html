@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ford Explorer</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: LEFT IMAGE + RIGHT TEXT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS on the RIGHT SIDE (Grid Layout) === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  /* Hover Specs */
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  /* === GALLERY === */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Ford Explorer</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/Explorer.png">
+
+    <div class="top-text">
+      <p>
+        The Ford Explorer is a mid-size SUV that has become one of Ford’s most popular family and utility vehicles since its introduction in 1990. Over multiple generations, it has evolved from a rugged off-road SUV into a modern, versatile crossover blending comfort, technology, and performance.
+      </p>
+
+      <p>
+        The latest Explorer offers multiple powertrains, including EcoBoost engines and a hybrid option, giving buyers flexibility in fuel economy and performance. Intelligent all-wheel drive, terrain management systems, and modern safety tech make it capable both on-road and off-road.
+      </p>
+
+      <p>
+        Today, the Explorer remains a benchmark in the mid-size SUV segment with advanced tech like a digital gauge cluster, SYNC 4 infotainment, and spacious three-row seating—perfect for families and long trips.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS GRID === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE OPTIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Engine Options</div>
+        <div class="spec-content">
+          <ul>
+            <li>2.3 L EcoBoost I4 Turbo — 300 hp, 420 Nm</li>
+            <li>3.0 L EcoBoost V6 — 400 hp, 583 Nm</li>
+            <li>3.3 L Hybrid V6 — 318 hp combined, 430 Nm</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION & DRIVETRAIN -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission & Drivetrain</div>
+        <div class="spec-content">
+          <ul>
+            <li>10-Speed Automatic</li>
+            <li>Rear-Wheel Drive (standard)</li>
+            <li>Intelligent All-Wheel Drive (optional)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: ~6.0–7.0 sec</li>
+            <li>Top Speed: ~200–230 km/h</li>
+            <li>Towing Capacity: 2,268–2,750 kg</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS & SUSPENSION -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Independent front & rear suspension</li>
+            <li>Adaptive damping system (higher trims)</li>
+            <li>Terrain Management System</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Four-wheel disc brakes</li>
+            <li>ABS & stability control</li>
+            <li>Optional advanced braking assist</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: 5,050 mm</li>
+            <li>Width: 2,004 mm</li>
+            <li>Height: 1,778 mm</li>
+            <li>Wheelbase: 3,025 mm</li>
+            <li>Weight: 2,100–2,400 kg</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Practicality</div>
+        <div class="spec-content">
+          <ul>
+            <li>Three-row seating (up to 7 passengers)</li>
+            <li>Digital cluster + SYNC 4 infotainment</li>
+            <li>Premium leather seating (higher trims)</li>
+            <li>Cargo space: 515–2,274 liters</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY SECTION === -->
+  <h2 style=>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/ford explorer front view.jpg" alt="Explorer Front View">
+    <img src="../PNG/2016-ford-explorer side view.jpg" alt="Explorer Side View">
+    <img src="../PNG/ford explorer interior.jpg" alt="Explorer Interior">
+    <img src="../PNG/Ford-Explorer-rear view.jpg" alt="Explorer Rear View">
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamborghini Aventador</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: IMAGE LEFT / TEXT RIGHT === */
+  /* === TOP SECTION: IMAGE LEFT / TEXT RIGHT (FIXED) === */
+.top-section {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+  flex-wrap: nowrap;          /* Prevents wrapping */
+  align-items: flex-start;    /* Align top edges */
+}
+
+.top-section img {
+  width: 50%;
+  max-width: 750px;
+  border-radius: 12px;
+  object-fit: cover;          /* Keeps image clean */
+}
+
+.top-text {
+  width: 50%;
+  font-size: 1.05em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  /* Specs grid */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  /* Gallery styles */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+  .top-section {
+    flex-direction: column;   /* stack only on small screens */
+  }
+  .top-section img,
+  .top-text {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Lamborghini Aventador</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/Aventador.png" alt="Lamborghini Aventador">
+
+    <div class="top-text">
+      <p>
+      The Lamborghini Aventador is a flagship V12 supercar introduced in 2011, known for its aggressive design, extreme performance, and iconic naturally aspirated 6.5-liter V12 engine. It replaced the Murciélago as Lamborghini’s top model.
+    </p>
+    <p>
+      With up to 770 horsepower in the SVJ variant, a 7-speed ISR gearbox, all-wheel drive, and advanced aerodynamics, the Aventador delivers explosive acceleration, precise handling, and a dramatic presence on the road.
+    </p>
+    <p>
+      Over the years, variants like the Aventador S, SV, and SVJ have improved power, aerodynamics, and technology, making it a symbol of Lamborghini’s engineering and the last true naturally aspirated V12 supercar of its era.
+    </p>
+    </div>
+  </div>
+
+  <!-- === SPECS GRID === -->
+  <div class="lower-section">
+    <div class="spec-column">
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>6.5 L Naturally Aspirated V12</li>
+            <li>Displacement: 6,498 cc</li>
+            <li>Power (LP700-4): 700 PS</li>
+            <li>Power (Aventador S): 740 PS</li>
+            <li>Power (SV): 750 PS</li>
+            <li>Power (SVJ): 770 PS</li>
+            <li>Torque: ~690 Nm</li>
+            <li>Redline: ~8,500 rpm</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION & DRIVETRAIN -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission & Drivetrain</div>
+        <div class="spec-content">
+          <ul>
+            <li>7-Speed ISR single-clutch transmission</li>
+            <li>All-Wheel Drive (Haldex system)</li>
+            <li>Electronically controlled center differential</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h (LP700-4): 2.9 s</li>
+            <li>0–100 km/h (SV/SVJ): 2.8 s</li>
+            <li>Top Speed: ~350 km/h</li>
+            <li>Quarter Mile: ~10–11 seconds</li>
+            <li>Drive Modes: Strada, Sport, Corsa (Ego Mode for newer models)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-column">
+      <!-- CHASSIS & SUSPENSION -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbon-fiber monocoque chassis</li>
+            <li>Aluminum front and rear subframes</li>
+            <li>Push-rod suspension system</li>
+            <li>Magnetorheological dampers (S, SVJ)</li>
+            <li>Four-wheel steering (Aventador S onward)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbon-ceramic brakes</li>
+            <li>Ventilated discs</li>
+            <li>6-piston front calipers</li>
+            <li>4-piston rear calipers</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: ~4,780 mm</li>
+            <li>Width: ~2,030 mm</li>
+            <li>Height: ~1,136 mm</li>
+            <li>Wheelbase:</li>
+          </ul>
+        </div>
+      </div>
+            
+            <!-- INTERIOR & PRACTICALITY -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Practicality</div>
+        <div class="spec-content">
+          <ul>
+            <li>Two-seat cockpit</li>
+            <li>TFT digital instrument cluster</li>
+            <li>Front luggage compartment (~140 L)</li>
+            <li>Drive-by-wire throttle system</li>
+            <li>Optional luxury trims depending on variant</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/lamborghini-Aventador front view.jpg" alt="Aventador Front View">
+    <img src="../PNG/Lamborghini Aventador side view.jpg" alt="Aventador Side View">
+    <img src="../PNG/Mansory-Lamborghini_Aventador-2012-interior.jpg" alt="Aventador Interior">
+    <img src="../PNG/LA rear view.jpg" alt="Aventador Rear View">
+  </div>
+
+</div>
+
+</body>
+</html>

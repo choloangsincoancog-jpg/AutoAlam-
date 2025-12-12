@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nissan Silvia S15</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 650px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Nissan Silvia S15</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/Silvia.png">
+
+    <div class="top-text">
+      <p>
+        The Nissan Silvia S15, produced from 1999 to 2002, is the final and most advanced generation of the Silvia lineup.
+        Known worldwide for its lightweight chassis, balanced handling, and tunability, the S15 became an icon in drifting
+        and Japanese car culture.
+      </p>
+      <br>
+      <p>
+        Featuring the legendary SR20DET turbocharged 2.0L engine, the S15 delivered sharp throttle response, strong torque,
+        and impressive upgrade potential. Its rear-wheel-drive layout and finely tuned multi-link suspension made it one of
+        the best-handling sports cars of its era.
+      </p>
+      <br>
+      <p>
+        Today, the S15 is highly sought after due to its rarity, performance potential, and iconic status in motorsport,
+        especially drifting. Its combination of style, capability, and tuning freedom has cemented it as one of Nissan’s
+        most beloved sports cars.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS GRID === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>2.0 L SR20DET Turbocharged Inline-4</li>
+            <li>Power: 250 hp (Spec-R)</li>
+            <li>Torque: 275 Nm</li>
+            <li>High tuning potential (400+ hp capable)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission</div>
+        <div class="spec-content">
+          <ul>
+            <li>6-speed manual (Spec-R)</li>
+            <li>5-speed manual (Spec-S)</li>
+            <li>4-speed automatic optional</li>
+            <li>Rear-wheel drive</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: ~5.5–6.0 seconds</li>
+            <li>Top Speed: ~240 km/h</li>
+            <li>Quarter Mile: ~14.2 seconds (stock)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- SUSPENSION -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Front: MacPherson strut</li>
+            <li>Rear: Multi-link independent suspension</li>
+            <li>Excellent platform for drifting</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Ventilated disc brakes (front & rear)</li>
+            <li>ABS available</li>
+            <li>Aftermarket big brake kits widely used</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: 4,515 mm</li>
+            <li>Width: 1,690 mm</li>
+            <li>Height: 1,280 mm</li>
+            <li>Wheelbase: 2,525 mm</li>
+            <li>Weight: 1,200–1,270 kg</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Features</div>
+        <div class="spec-content">
+          <ul>
+            <li>Driver-focused cockpit</li>
+            <li>Lightweight sports seats</li>
+            <li>Analog performance gauges</li>
+            <li>Simple, clean interior layout</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/Nissan Silvia front view.jpg" alt="Silvia Front">
+    <img src="../PNG/Nissan Silvia side view.jpg" alt="Silvia Side">
+    <img src="../PNG/Nissan Silvia interior.jpg" alt="Silvia Interior">
+    <img src="../PNG/Nissan Silvia rear view.jpg" alt="Silvia Rear">
+  </div>
+
+</div>
+
+</body>
+</html>

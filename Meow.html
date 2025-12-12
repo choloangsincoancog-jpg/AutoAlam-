@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoAlam : An Informational Car Website</title>
+  <style>
+    body {
+  background-color: #b6ddff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(BG2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+
+    .top-image {
+      width: 500px;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 50%;
+    }
+    
+    .navbar:hover {
+      background-color: rgba(45, 101, 169, 1);
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      transition: background-color 1.5s ease;
+      border-radius: 10px;
+    }
+
+    .navbar a:hover {
+      background-color: #55739e;
+    }
+    
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #20f0ff;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="Logo.png" alt="Logo kaso way picture" class="top-image">
+
+  
+
+  <div class="navbar"> 
+    <a href="Cars.html">Click here to Continue</a>
+  </div>
+
+  <footer>
+    Cholo Angsinco <br>
+
+    Abdul Francisco Bantao <br>
+
+    Jessa Mae L. Paulin <br>
+    
+    Renowe Beloy <br>
+  </footer>
+
+</body>
+</html>

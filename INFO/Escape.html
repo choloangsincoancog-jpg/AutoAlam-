@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ford Escape</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info box */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* Top layout */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* Lower section (2 column specs) */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  /* Expandable spec boxes */
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 600px;
+    padding: 15px;
+  }
+
+  /* Gallery */
+  .gallery {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .top-section,
+    .lower-section {
+      flex-direction: column;
+    }
+    .top-section img,
+    .top-text,
+    .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Ford Escape</h1>
+
+  <!-- IMAGE LEFT + TEXT RIGHT -->
+  <div class="top-section">
+    <img src="../PNG/Escape.png">
+
+    <div class="top-text">
+      <p>
+        The Ford Escape is a compact SUV designed to combine efficiency, practicality, and modern technology. 
+        First introduced in 2000, the Escape has evolved through multiple generations, offering a variety 
+        of powertrains, including turbocharged 3-cylinder engines, naturally aspirated 4-cylinders, 
+        and hybrid variants. Its compact dimensions make it ideal for urban driving, while still providing 
+        spacious seating and cargo capacity for small families or active lifestyles.
+      </p>
+
+      <p>
+        The Escape offers features such as Ford’s Co-Pilot360 safety suite, SYNC infotainment system, 
+        and advanced driver-assist technology. With optional all-wheel drive, the Escape can handle 
+        a variety of road conditions, from city streets to light off-road trails. Its combination of 
+        fuel efficiency, comfort, and technology makes it a competitive choice in the compact SUV market.
+      </p>
+
+      <p>
+        The modern Ford Escape continues to prioritize versatility and practicality, offering configurable 
+        seating, hybrid options for improved fuel economy, and a user-friendly interior design. It remains 
+        a popular choice for buyers seeking a compact SUV that balances performance, technology, and daily usability.
+      </p>
+    </div>
+  </div>
+
+  <!-- SPECS (VENENO STYLE) -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE OPTIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Engine Options</div>
+        <div class="spec-content">
+          <ul>
+            <li>1.5 L EcoBoost Inline-3: 181 hp, 257 Nm torque</li>
+            <li>2.0 L EcoBoost Inline-4: 250 hp, 373 Nm torque</li>
+            <li>2.5 L Hybrid I4: 200 hp, 210 Nm torque (combined)</li>
+            <li>2.5 L Plug-in Hybrid: 221 hp combined</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission & Drivetrain</div>
+        <div class="spec-content">
+          <ul>
+            <li>8-Speed Automatic Transmission (gas engines)</li>
+            <li>eCVT (hybrid)</li>
+            <li>Front-Wheel Drive (standard)</li>
+            <li>Intelligent All-Wheel Drive (optional)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: ~7.0–8.5 seconds</li>
+            <li>Top Speed: ~180–200 km/h</li>
+            <li>Fuel Economy: 5.5–8.0 L/100 km</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Independent front and rear suspension</li>
+            <li>Electric power-assisted steering</li>
+            <li>Optional adaptive damping system (higher trims)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Four-wheel disc brakes</li>
+            <li>ABS and stability control standard</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: ~4,613 mm</li>
+            <li>Width: ~1,884 mm</li>
+            <li>Height: ~1,684 mm</li>
+            <li>Wheelbase: ~2,710 mm</li>
+            <li>Weight: ~1,600–1,900 kg</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Practicality</div>
+        <div class="spec-content">
+          <ul>
+            <li>Five-seat configuration</li>
+            <li>Digital instrument cluster</li>
+            <li>SYNC infotainment system</li>
+            <li>Split-fold rear seats</li>
+            <li>Cargo space: ~908 liters (seats folded)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY SECTION === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/FE front view .jpg" alt="Escape Front View">
+    <img src="../PNG/2019-ford-escape-titanium-fwd-side-exterior-view.jpg" alt="Escape Side View">
+    <img src="../PNG/2019_ford_escape_interior.jpg" alt="Escape Interior">
+    <img src="../PNG/FE rear view.jpg" alt="Escape Rear View">
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>

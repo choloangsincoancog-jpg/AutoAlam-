@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari Enzo</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 650px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Ferrari Enzo</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/Enzo.png">
+
+    <div class="top-text">
+      <p>
+        The Ferrari Enzo, named in honor of company founder Enzo Ferrari, is one of the most iconic 
+        and technologically advanced supercars of the early 2000s. Produced in a limited run of **399 units**, 
+        it represented Ferrari’s most extreme road-going machine at the time.
+      </p>
+      <br>
+      <p>
+        Built using Formula 1–derived technology, the Enzo features a carbon-fiber monocoque chassis, 
+        advanced aerodynamics, ceramic brakes, and one of the most powerful naturally aspirated engines Ferrari 
+        has ever created.
+      </p>
+      <br>
+      <p>
+        With its legendary V12, rapid-shifting F1 gearbox, and lightweight carbon construction, 
+        the Ferrari Enzo delivers one of the purest and most thrilling driving experiences of any supercar 
+        ever built — solidifying its place as a true automotive legend.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS GRID === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>6.0 L Naturally Aspirated V12 (F140B)</li>
+            <li>Power: **651 hp (485 kW)**</li>
+            <li>Torque: 657 Nm</li>
+            <li>Redline: 8,200 rpm</li>
+            <li>Carbon fiber intake & F1-inspired design</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission</div>
+        <div class="spec-content">
+          <ul>
+            <li>6-speed "F1" automated manual gearbox</li>
+            <li>Paddle shifters</li>
+            <li>Rear-wheel drive</li>
+            <li>Shift time: 150 milliseconds</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: **3.6 seconds**</li>
+            <li>0–200 km/h: **9.5 seconds**</li>
+            <li>Top Speed: **350 km/h**</li>
+            <li>Quarter mile: ~11.0 seconds</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS / SUSPENSION -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbon-fiber monocoque chassis</li>
+            <li>Push-rod front & rear suspension</li>
+            <li>Active aerodynamic system</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Brembo carbon-ceramic brakes</li>
+            <li>Ventilated discs</li>
+            <li>Track-oriented stopping performance</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: 4,702 mm</li>
+            <li>Width: 2,035 mm</li>
+            <li>Height: 1,147 mm</li>
+            <li>Weight: 1,365 kg</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Features</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbon fiber racing-style interior</li>
+            <li>Lightweight bucket seats</li>
+            <li>Minimalist performance-focused cabin</li>
+            <li>F1 traction control & driving electronics</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/Enzo front view.jpg" alt="Enzo Front">
+    <img src="../PNG/Enzo side view.jpg" alt="Enzo Side">
+    <img src="../PNG/Enzo interior.jpg" alt="Enzo Interior">
+    <img src="../PNG/Enzo rear view.jpg" alt="Enzo Rear">
+  </div>
+
+</div>
+
+</body>
+</html>

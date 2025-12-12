@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nissan GT-R</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: LEFT IMAGE + RIGHT TEXT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 750px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS GRID === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  /* Hoverable spec sections */
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  /* === GALLERY STYLES === */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Nissan GT-R</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/GTR.png">
+
+    <div class="top-text">
+      <p>
+        The Nissan GT-R (R35), introduced in 2007, is the modern successor to the legendary Skyline GT-R, 
+        carrying forward the GT-R name as Nissan’s flagship performance car. Known as “Godzilla” in the 
+        automotive world, the GT-R combines extreme performance, advanced technology, and Japanese 
+        engineering precision to dominate both road and track. Unlike its Skyline predecessors, the R35 
+        drops the Skyline name entirely, establishing itself as a standalone supercar.
+      </p>
+      <p>
+        The GT-R features a 3.8 L twin-turbocharged V6 engine (VR38DETT) paired with a dual-clutch 6-speed 
+        transmission and advanced ATTESA E-TS all-wheel-drive system. Its lightweight construction, adaptive 
+        suspension, and active aerodynamics allow it to deliver supercar-level acceleration and cornering, 
+        all while retaining daily usability. Its sophisticated electronics, including launch control and torque 
+        vectoring, make it one of the most driver-focused and precise high-performance cars of the modern era.
+      </p>
+      <p>
+        Today, the Nissan GT-R remains a symbol of Japanese performance and engineering, blending 
+        tunability, raw power, and technological sophistication. It continues to challenge supercars 
+        from Europe and America, proving that Japanese engineering can compete at the highest level.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS GRID === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>3.8 L VR38DETT V6 Twin-Turbo</li>
+            <li>Power: 570–600 hp (standard), up to 720+ hp in Nismo version</li>
+            <li>Torque: 637–652 Nm</li>
+            <li>Redline: ~7,000 rpm</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION & DRIVETRAIN -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission & Drivetrain</div>
+        <div class="spec-content">
+          <ul>
+            <li>6-Speed Dual-Clutch Transmission</li>
+            <li>ATTESA E-TS All-Wheel Drive</li>
+            <li>Active Limited Slip Differential</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: 2.9–3.2 seconds (depending on version)</li>
+            <li>Top Speed: ~315 km/h</li>
+            <li>Quarter Mile: ~10.8–11.0 seconds</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS & SUSPENSION -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Front double-wishbone suspension</li>
+            <li>Rear multi-link suspension with adaptive dampers</li>
+            <li>Advanced aerodynamics for high-speed stability</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Brembo brake system with ventilated discs</li>
+            <li>ABS and electronic brake-force distribution</li>
+            <li>Carbon-ceramic brakes optional in Nismo version</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: ~4,710 mm</li>
+            <li>Width: ~1,895 mm</li>
+            <li>Height: ~1,370 mm</li>
+            <li>Wheelbase: ~2,780 mm</li>
+            <li>Weight: ~1,740–1,800 kg depending on trim</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR & PRACTICALITY -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Practicality</div>
+        <div class="spec-content">
+          <ul>
+            <li>2+2 seating layout</li>
+            <li>Driver-focused cockpit with multifunction digital displays</li>
+            <li>Premium materials and sports seats</li>
+            <li>Minimal cargo space, designed for performance</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/Nissan-GT-R-2017-front view.png" alt="GT-R Front View">
+    <img src="../PNG/Nissan-GT-R-2017-side view.png" alt="GT-R Side View">
+    <img src="../PNG/nissan-gt-r-dashboard-view-768197 inside.png" alt="GT-R Interior">
+    <img src="../PNG/Nissan-GT-R-2017-rear view.png" alt="GT-R Rear View">
+  </div>
+
+</div>
+
+</body>
+</html>

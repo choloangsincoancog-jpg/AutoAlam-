@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagani Zonda Cinque</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 650px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Pagani Zonda Cinque</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/Cinque.png">
+
+    <div class="top-text">
+      <p>
+        The Pagani Zonda Cinque is one of the rarest and most extreme hypercars ever produced.  
+        Limited to only **five units**, the Cinque was developed as the ultimate version of the Zonda,  
+        blending performance from the Zonda R with street legality.
+      </p>
+      <br>
+      <p>
+        Designed using advanced carbon-titanium materials, the Cinque achieves incredible rigidity  
+        while remaining extremely lightweight. It features unique styling elements such as the  
+        signature roof air scoop, massive rear wing, and exposed carbon fiber bodywork.
+      </p>
+      <br>
+      <p>
+        Powered by a tuned Mercedes-AMG V12, the Zonda Cinque delivers brutal acceleration, razor-sharp handling,  
+        and a spine-tingling exhaust note. Today, it is one of the most desirable and valuable hypercars  
+        in Pagani’s history.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS GRID === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>7.3 L Mercedes-AMG M120 V12 (Naturally Aspirated)</li>
+            <li>Power: 678 hp (505 kW)</li>
+            <li>Torque: 780 Nm</li>
+            <li>Inconel & titanium exhaust system</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission</div>
+        <div class="spec-content">
+          <ul>
+            <li>6-speed automated sequential gearbox</li>
+            <li>Paddle shifters</li>
+            <li>Rear-wheel drive</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: 3.4 seconds</li>
+            <li>0–200 km/h: 9.6 seconds</li>
+            <li>Top Speed: ~350 km/h</li>
+            <li>Downforce optimized aerodynamics</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- SUSPENSION -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Carbon-titanium monocoque chassis</li>
+            <li>Ohlins adjustable racing suspension</li>
+            <li>Extremely lightweight construction</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BRAKES -->
+      <div class="spec-section">
+        <div class="spec-title">Brakes</div>
+        <div class="spec-content">
+          <ul>
+            <li>Brembo Carbon-Ceramic Brakes</li>
+            <li>Ventilated discs</li>
+            <li>Track-level stopping performance</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: 4,395 mm</li>
+            <li>Width: 2,014 mm</li>
+            <li>Height: 1,146 mm</li>
+            <li>Weight: 1,210 kg</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Features</div>
+        <div class="spec-content">
+          <ul>
+            <li>Handcrafted carbon fiber & leather interior</li>
+            <li>Lightweight racing seats</li>
+            <li>Aluminum & titanium trim</li>
+            <li>Motorsport-inspired cockpit design</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/zonda-cinque front view.jpg" alt="Zonda Cinque Front">
+    <img src="../PNG/zonda cinque side view.jpg" alt="Zonda Cinque Side">
+    <img src="../PNG/Pagani-Zonda_Cinque-interior.jpg" alt="Zonda Cinque Interior">
+    <img src="../PNG/zonda cinque rear view.jpg" alt="Zonda Cinque Rear">
+  </div>
+
+</div>
+
+</body>
+</html>

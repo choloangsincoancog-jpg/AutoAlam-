@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamborghini Huracan</title>
+  <link rel="stylesheet" href="../Meow.css">
+
+<style>
+  /* Keep navbar full width */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  /* Info Container */
+  .info {
+    background-color: white;
+    border: 2px solid #c92424;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    color: #222;
+  }
+
+  p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+
+  /* === TOP SECTION: LEFT IMAGE + RIGHT TEXT === */
+  .top-section {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .top-section img {
+    width: 50%;
+    max-width: 750px;
+    border-radius: 12px;
+  }
+
+  .top-text {
+    width: 50%;
+    font-size: 1.05em;
+  }
+
+  /* === SPECS RIGHT SIDE (Grid Layout) === */
+  .lower-section {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .spec-column {
+    width: 50%;
+  }
+
+  /* Hover specs */
+  .spec-section {
+    margin: 15px 0;
+    border: 2px solid #c92424;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .spec-title {
+    background: #c92424;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .spec-content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    transition: max-height 0.4s ease;
+    padding: 0 15px;
+  }
+
+  .spec-section:hover .spec-content {
+    max-height: 500px;
+    padding: 15px;
+  }
+
+  /* GALLERY */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 900px) {
+    .top-section, .lower-section {
+      flex-direction: column;
+    }
+    .top-section img, .top-text, .spec-column {
+      width: 100%;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+<div class="navbar"> 
+  <a class="icon" href="../Cars.html"><img src="../Logo.png"></a>
+  <img src="../LogoN.png" class="OperaO">
+</div>
+
+<div class="info">
+  <h1>Lamborghini Huracan</h1>
+
+  <!-- === IMAGE LEFT / TEXT RIGHT === -->
+  <div class="top-section">
+    <img src="../PNG/Huracan.png">
+
+    <div class="top-text">
+      <p>
+        The Lamborghini Huracán represents a significant evolution in Lamborghini’s lineup, succeeding the 
+        Gallardo as the brand’s entry-level V10 supercar. Introduced in 2014, the Huracán blends extreme 
+        performance with advanced technology, refined aerodynamics, and Lamborghini’s unmistakable aggressive 
+        design language. Its name is inspired by a famous Spanish fighting bull, “Huracán,” symbolizing 
+        strength, courage, and ferocity.
+      </p>
+
+      <p>
+        Powering the Huracán is a naturally aspirated 5.2-liter V10 engine, delivering around 610 to 640 
+        horsepower depending on the variant. The engine is paired with a 7-speed dual-clutch transmission, 
+        offering lightning-fast gear changes and exceptional driving dynamics. The Huracán is available in 
+        rear-wheel-drive and all-wheel-drive configurations, providing both thrilling agility and confident 
+        handling at extreme speeds. Variants like the Performante, EVO, and STO pushed the car further, 
+        adding enhanced aerodynamics, lightweight materials, and track-focused performance without sacrificing 
+        daily usability.
+      </p>
+    </div>
+  </div>
+
+  <!-- === SPECS RIGHT SIDE === -->
+  <div class="lower-section">
+
+    <div class="spec-column">
+
+      <!-- ENGINE -->
+      <div class="spec-section">
+        <div class="spec-title">Engine</div>
+        <div class="spec-content">
+          <ul>
+            <li>5.2 L Naturally Aspirated V10</li>
+            <li>Power: 610 PS (Huracán LP610-4)</li>
+            <li>Power (Performante / EVO): 640 PS</li>
+            <li>Torque: ~560–600 Nm</li>
+            <li>Redline: ~8,500 rpm</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TRANSMISSION -->
+      <div class="spec-section">
+        <div class="spec-title">Transmission & Drivetrain</div>
+        <div class="spec-content">
+          <ul>
+            <li>7-Speed Dual-Clutch Transmission (LDF)</li>
+            <li>All-Wheel Drive (LP610-4 & Performante)</li>
+            <li>Rear-Wheel Drive (LP580-2, STO)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PERFORMANCE -->
+      <div class="spec-section">
+        <div class="spec-title">Performance</div>
+        <div class="spec-content">
+          <ul>
+            <li>0–100 km/h: 2.9–3.2 seconds (depending on variant)</li>
+            <li>Top Speed: ~325 km/h</li>
+            <li>Drive Modes: Strada, Sport, Corsa, EGO</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="spec-column">
+
+      <!-- CHASSIS -->
+      <div class="spec-section">
+        <div class="spec-title">Chassis & Suspension</div>
+        <div class="spec-content">
+          <ul>
+            <li>Aluminium and carbon-fiber monocoque chassis</li>
+            <li>Magnetorheological suspension (on EVO & Performante)</li>
+            <li>Pushrod suspension system (Performante & STO)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- DIMENSIONS -->
+      <div class="spec-section">
+        <div class="spec-title">Dimensions</div>
+        <div class="spec-content">
+          <ul>
+            <li>Length: ~4,520 mm</li>
+            <li>Width: ~1,933 mm</li>
+            <li>Height: ~1,165 mm</li>
+            <li>Wheelbase: ~2,620 mm</li>
+            <li>Weight: ~1,422–1,542 kg (depending on variant)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- INTERIOR -->
+      <div class="spec-section">
+        <div class="spec-title">Interior & Practicality</div>
+        <div class="spec-content">
+          <ul>
+            <li>2-seat cockpit</li>
+            <li>Digital instrument cluster</li>
+            <li>Infotainment system with navigation and Apple CarPlay</li>
+            <li>Premium leather and Alcantara trim</li>
+            <li>Small front luggage compartment (~100 liters)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- === GALLERY SECTION === -->
+  <h2>Gallery:</h2>
+  <div class="gallery">
+    <img src="../PNG/LH front view.jpg" alt="Huracan Front View">
+    <img src="../PNG/lamborghini-huracn-side view.jpg" alt="Huracan Side View">
+    <img src="../PNG/LH interior.jpg" alt="Huracan Interior">
+    <img src="../PNG/LH rear view.jpg" alt="Huracan Rear View">
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>
